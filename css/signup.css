@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+ul#menu .user{
+  width: 166.59px;
+  height: 40px;
+  background-image: url("../img/mokume2.jpg");
+  border: 1px solid #000;
+}
+
+ul#menu li.user a{
+  font-size: 24px;
+  color:#000;
+}
+
+#main .img{
+  background-image: url("../img/dez5.jpg");
+  height: 180px;
+}
+
+#main{
+  background:none;
+}
+
+#main .logo img{
+  width: 175px;
+  height: 175px;
+  top: 5px;
+  left: 585px;
+}
+
+#down{
+  display: none;
+}
+
+#login{
+  margin: 50px 0;
+}
+
+#home .logo img{
+  width: 210px;
+  height: 60px;
+  background: url(../img/mokume4.png) repeat;
+  border-radius: 10px;
+  margin: 80px 40px;
+  padding: 10px;
+}
+
+#home p{
+  /* width: 1000px; */
+	height: 100px;
+	text-align: center;
+	line-height: 150px;
+}

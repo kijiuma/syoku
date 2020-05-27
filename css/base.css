@@ -1,0 +1,494 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*--- ページ基本デザイン ---*/
+
+
+#header {
+  max-width: 1000px;
+	width: auto;
+  margin: 0 auto;
+  display: flex;
+  background-image:url(../img/mokume2.jpg)
+}
+
+#logo img{
+  width: 250px;
+  height: 150px;
+	padding-left: 20px ;
+}
+
+p.ei{
+  font-size: 30px;
+  font-weight: bold;
+  flex-wrap: wrap;
+  margin: 30px 0 0 8.4vw;
+  text-align: center;
+}
+
+body{
+  background-image:url("../img/mokume3.jpg")
+}
+
+ul#menu li{
+  line-height: 40px;
+	width: 11.57vw;
+	/* width:auto; */
+  /* float: left; */
+  text-align: center;
+}
+ul#menu li a{
+  color: #fff;
+}
+ul#menu li a:hover{
+ color:#237abd;
+ text-decoration:initial;
+}
+
+ul#menu{
+	display: flex;
+	justify-content:space-between;
+  width: 100%;
+  height: 40px;
+  background: url("../img/mokume4.png") repeat;
+  padding: 0 calc(50% - 500px);
+}
+
+
+#main{
+  background: url("../img/isi.png") repeat;
+  position:relative;
+}
+
+#main .img{
+  max-width: 1000px;
+	width: 100%;
+	height: 25vw;
+  /* height: auto; */
+  margin: 0 auto;
+  background-size: 100%;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+	border: 3px solid #fff;
+}
+
+#main .logo img{
+  width: 14vw;
+  height: 14vw;
+  position:absolute;
+  top: 7vw;
+	left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#down{
+	width: 100%;
+	/* max-width: 1000px; */
+	width: auto;
+  height: 40px;
+  background: url("../img/mokume4.png") repeat;
+}
+
+#home{
+  max-width: 1000px;
+	width: auto;
+  background-color: #fff;
+  margin: 0 auto;
+
+}
+
+img.line{
+  max-width: 960px;
+	width: 100%;
+	/* width: auto; */
+	height: 39px;
+  /* height: auto; */
+  background:url("../img/japan_s.jpg") repeat;
+  margin: 0 auto;
+}
+img.line2{
+ max-width: 960px;
+ width: 100%;
+ /* width: auto; */
+ max-height: 39px;
+ height: 100%;
+ background:url("../img/italy_s.jpg") repeat;
+ margin: 0 auto;
+}
+#Sub_menu{
+	max-width: 1000px;
+	width: 100%;
+  background-image: url("../img/mokume4.png");
+	margin: 0 auto;
+	padding: 5px 0;
+}
+#sub_menu{
+	max-width: 1000px;
+	width: auto;
+	padding: 10px;
+	display: flex;
+}
+
+#sub_menu img{
+	max-width: 296px;
+	width: 100%;
+	max-height: 96px;
+	height: 100%;
+	/* margin: 13px; */
+	flex-wrap: wrap;
+}
+
+
+#footer img{
+  max-width: 1000px;
+	width: 100%;
+	/* width: auto; */
+  height: auto;
+  padding: 10px 20px 10px 20px;
+  margin: 0 auto;
+  background: url("../img/mokume2.jpg") repeat;
+}
+
+#menu li.rese{
+	display: none;
+}
+
+#home{
+  padding: 6px 0;
+}
+
+#home .logo{
+  width: 290px;
+	height: 140px;
+  margin: 0 auto;
+}
+
+#home .name_logo{
+	width: 210px;
+	height: 60px;
+  margin: 80px 40px;
+  border-bottom: 2px solid #000;
+}
+
+.image{
+	  filter: alpha(opacity=100);
+	  -moz-opacity:100;
+	  opacity:100;
+	}
+
+.image:hover{
+	  filter: alpha(opacity=0);
+	  -moz-opacity:0;
+	  opacity:0;
+	}
+
+#sub_menu a{
+	max-width: 300px;
+	width: 100%;
+	max-height: 100px;
+	height: 100%;
+	margin: 13px;
+  border: 2px solid #fff;
+	background-size: 100%;
+}
+
+#sub_menu a.letter1{
+	background-image: url("../img/logo_even3.png");
+}
+#sub_menu a.letter2{
+	background-image: url("../img/logo_photo2.png");
+}
+#sub_menu a.letter3{
+	background-image: url("../img/staff3.png");
+}
+
+span{
+  color: #f55;
+}
+
+/* ボタン */
+#home_in p{
+  width: 230px;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 60px;
+  border: 2px solid #000;
+  background: url("../img/mokume4.png") repeat;
+  border-radius: 10px;
+}
+
+#home_in a{
+  font-size: 30px;
+  color:#fff;
+}
+
+
+.name_logo input{
+  width: 210px;
+  height: 60px;
+  background: url("../img/mokume4.png") repeat;
+  border-radius: 10px;
+  /* margin:  40px; */
+  font-size: 30px;
+  color: #fff;
+}
+
+#home .name_logo{
+  border-bottom: hidden;
+}
+
+#home p.error{
+  width: 400px;
+  height: 15px;
+	text-align: left;
+  line-height: 15px;
+	font-size: 15px;
+	padding-top: 5px;
+	color:#f00;
+}
+
+#home_moji p,#home_moji h1{
+  /* width: 700px; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+/* レスポンシブ */
+header{
+		display: none;
+}
+/* レスポンシブ */
+/* @media screen and (max-width:1024px) and (max-width:768px) */
+@media (max-width: 767px) {
+	#header {
+	  display: block;
+	  max-width: 600px;
+		width: auto;
+	}
+	p.ei{
+	  flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	ul#menu li{
+		display: none;
+	}
+	/* ハンバーガーメニュー */
+	/* メニューを消す */
+	header{
+			display: inherit;
+	}
+	#header{
+		border-bottom: none;
+	}
+	/* mokuji */
+	#header ul div.navi1{
+		width: 100%;
+		max-width: 120px;
+		height:40px;
+		margin: 3px;
+		background-color: #fff;
+		float: left;
+	}
+	#header ul li img{
+		width: 140px;
+		height:30px;
+		margin: 5px 0;
+	}
+	#header ul li.navi1{
+		clear: both;
+		font-size: 2vw;
+		margin:  2vw;
+	}
+	#header ul a{
+	  color: #fff;
+	}
+	#header ul a span{
+		font-size:20px;
+		font-weight:bold;
+		color: #237abd;
+	}
+	#header .tel1{
+		margin: 5px 10px 0 0 ;
+	}
+	/*ヘッダーまわりはサイトに合わせて調整してください*/
+	header {
+		margin-left: 90%
+	}
+	#nav-drawer {
+	  position: relative;
+	}
+	/*チェックボックス等は非表示に*/
+	.nav-unshown {
+	  display:none;
+	}
+	/*アイコンのスペース*/
+	#nav-open {
+	  display: inline-block;
+	  width: 30px;
+	  /* height: 35px; */
+		height: auto;
+	  vertical-align: middle;
+	}
+	/*ハンバーガーアイコンをCSSだけで表現*/
+	#nav-open span, #nav-open span:before, #nav-open span:after {
+	  position: absolute;
+	  height: 3px;/*線の太さ*/
+	  width: 25px;/*長さ*/
+	  border-radius: 3px;
+		background: url("../img/mokume4.png") repeat;
+	  display: block;
+	  content: '';
+	  cursor: pointer;
+	}
+	#nav-open span:before {
+	  bottom: -8px;
+	}
+	#nav-open span:after {
+	  bottom: -16px;
+	}
+	/*閉じる用の薄黒カバー*/
+	#nav-close {
+	  display: none;/*はじめは隠しておく*/
+	  position: fixed;
+	  z-index: 99;
+	  top: 0;/*全体に広がるように*/
+	  left: 0;
+	  width: 100%;
+		height: auto;
+	  height: 33vw;
+	  background: black;
+	  opacity: 0;
+	  transition: .3s ease-in-out;
+	}
+	/*中身*/
+	#nav-content {
+	  overflow: auto;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  z-index: 9999;/*最前面に*/
+	  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+	  max-width: 400px;/*最大幅（調整してください）*/
+		height: auto;
+	  height: 33vw;
+		background: url("../img/mokume4.png") repeat;
+	  transition: .3s ease-in-out;/*滑らかに表示*/
+	  -webkit-transform: translateX(-105%);
+	  transform: translateX(-105%);/*左に隠しておく*/
+	}
+	/*チェックが入ったらもろもろ表示*/
+	#nav-input:checked ~ #nav-close {
+	  display: block;/*カバーを表示*/
+	  opacity: .5;
+	}
+	#nav-input:checked ~ #nav-content {
+	  -webkit-transform: translateX(0%);
+	  transform: translateX(95%);/*中身を表示（右へスライド）*/
+	  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+	}
+
+
+
+/* footer */
+
+	#sub_menu{
+		max-width: 1000px;
+		width: auto;
+		padding: 10px;
+		display: block;
+		margin: 0 auto;
+	}
+	#sub_menu img{
+		max-width: 296px;
+		width: 100%;
+		max-height: 96px;
+		height: 100%;
+		margin: 0 auto;
+
+		/* text-align: center; */
+	}
+	#sub_menu a{
+		display: block;
+		margin: 0 auto;
+	}
+	#sub_menu a.letter1{
+		background-image: url("../img/logo_even3.png");
+		margin-bottom: 15px;
+		margin-top: 15px;
+
+	}
+	#sub_menu a.letter2{
+		background-image: url("../img/logo_photo2.png");
+		margin-bottom: 15px;
+
+	}
+	#sub_menu a.letter3{
+		background-image: url("../img/staff3.png");
+		margin-bottom: 15px;
+
+	}
+
+}

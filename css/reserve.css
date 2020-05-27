@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+ul#menu .rese{
+  width: 166.59px;
+  height: 40px;
+  background-image: url("../img/mokume2.jpg");
+  border: 1px solid #000;
+}
+
+ul#menu li.rese a{
+  font-size: 24px;
+  color:#000;
+}
+
+#Sub_menu{
+  display: none;
+}
+
+#menu li,#main{
+  display: none
+}
+
+#menu li.rese{
+  /* display: block; */
+}
+
+ul#menu{
+  padding: 0 calc(50% - 80px);
+}
+
+/* background */
+#events_info .re_form{
+  max-width: 700px;
+  width: 100%;
+  max-height: 700px;
+  height: auto;
+  /* background-image: url("../img/mokume2.jpg"); */
+  /* background-size: cover; */
+  background-size: 100%;
+  margin: 0 auto;
+}
+
+#events_info .re_form img{
+  width: 700px;
+  max-height: 700px;
+  height: auto;
+  background-size: 100%;
+  margin: 0 auto;
+  position: absolute;
+  opacity: 0.6;
+}
+
+/* イベント情報 */
+#events_info .re_form dl{
+  max-width: 700px;
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+#events_info .re_form .top dt{
+  padding-top:  20px;
+}
+#events_info .re_form .bottom dd{
+  margin-bottom:  100px;
+}
+
+#events_info .re_form dt{
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px;
+  font-size: 20px;
+  /* z-index: 1000; */
+  font-weight: bold;
+  color: #000;
+  /* -webkit-text-stroke:0.1px #000; */
+}
+
+#events_info .re_form dd{
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  padding:  0 10px;
+  font-size: 30px;
+  z-index: 1000;
+  font-weight: bold;
+  color: #ff00aa;
+  -webkit-text-stroke:0.01px #ff00aa;
+}
+
+span.color1{
+  /* background-color:#000; */
+  color:#fff;
+  background: linear-gradient(transparent 10%, #000 90%);
+  border-bottom:1px solid #000;
+}
+
+span.color2{
+  /* background-color:#fff; */
+  color:#ff00aa;
+  background: linear-gradient(transparent 10%, #fff 90%);
+  border-bottom:1px solid #fff;
+}
+
+#home p{
+  text-align: center;
+  margin: 50px;
+}
+#botan{
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 50px ;
+}
+#botan input{
+  width: 100px;
+  height: 50px;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+/* ボタン */
+#home_in p{
+  width: 230px;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 60px;
+  border: 2px solid #000;
+  background: url("../img/mokume4.png") repeat;
+  border-radius: 10px;
+}
+
+#home_in a{
+  font-size: 30px;
+  color:#fff;
+}
+
+/* moji */
+#home .moji{
+  font-size: 20px;
+}

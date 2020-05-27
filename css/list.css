@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+
+
+#login{
+	max-width: 1000px;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+#login .title .event_id{
+	width: 100px;
+}
+#login .title th.event_name{
+	/* width: 300px; */
+}
+
+#login .table th{
+	width: 100px;
+}
+#login .table th.id{
+	width: 30px;
+}
+#login .table th.age,#login .table th.gender{
+	width: 50px;
+}
+#login .table th.comment{
+	width: 200px;
+}
+#login .table th.name{
+	width: 150px;
+}
+#login .table th.email{
+	width: 200px;
+}
+
+.table .userid{
+	width: 70px;
+}
+
+#login table#events{
+	max-width: 800px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}

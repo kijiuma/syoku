@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+ul#menu .even{
+  width: 166.59px;
+  height: 40px;
+  background-image: url("../img/mokume2.jpg");
+  border: 1px solid #000;
+}
+
+ul#menu li.even a{
+  font-size: 24px;
+  color:#000;
+}
+
+#main .img{
+  background-image: url("../img/event2.jpg");
+	border: 3px solid #000;
+}
+
+#event_list{
+  margin: 30px 0 170px 0;
+}
+
+/* かたち */
+.event_box{
+  max-width: 505px;
+  width: 100%;
+  max-height: 500px;
+  height: auto;
+  margin: 0 auto;
+  border-top: 2px solid #C0C0C0;
+  border-bottom: 2px solid #C0C0C0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #EEE;
+  padding: 10px 0;
+}
+
+/* タイトル */
+.event_name a{
+  font-size: 30px;
+  /* margin: 5px 0; */
+}
+
+.event_name{
+  max-width: 500px;
+  width: 100%;
+  max-height: 100px;
+  height: auto;
+  padding:5px 10px ;
+  text-align: center;
+}
+
+/* 画像 */
+.event_img{
+  width: 300px;
+  max-height: 300px;
+  height: auto;
+  background-color: #fff;
+  background-position: center center;
+  margin-left: 5px;
+}
+
+.event_img img{
+  width: 300px;
+  max-height: 300px;
+  height: auto;
+  background-size: 100%;
+  border: 2px solid #C0C0C0;
+}
+
+/* 詳細 */
+.event_s{
+  width: 200px;
+  max-height: 300px;
+  height: auto;
+  padding: 10px 0 0 20px;
+}
+
+.event_s th{
+  width: 50px;
+}
+
+/* イベントインフォかたち */
+.evein_box{
+  max-width: 905px;
+  width: 100%;
+  max-height: 900px;
+  height: auto;
+  margin: 0 auto;
+  border-top: 2px solid #C0C0C0;
+  border-bottom: 2px solid #C0C0C0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #EEE;
+  padding: 10px 0;
+}
+
+/* タイトル */
+.evein_name a{
+  font-size: 30px;
+}
+
+.evein_name{
+  max-width: 905px;
+  width: 100%;
+  /* max-height: 100px; */
+  height: auto;
+  padding:5px 10px ;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* 画像 */
+.evein_img{
+  width: 500px;
+  max-height: 500px;
+  height: auto;
+  background-color: #EEE;
+  background-position: center center;
+  margin-left: 5px;
+}
+
+.evein_img img{
+  width: 500px;
+  max-height: 500px;
+  height: auto;
+  background-size: 100%;
+  border: 2px solid #C0C0C0;
+}
+
+/* 詳細 */
+.evein_s{
+  width: 400px;
+  max-height: 400px;
+  height: auto;
+  padding: 10px 0 0 20px;
+}
+
+.evein_s p{
+  font-size: 19px;
+  /* width: 50px; */
+  margin: 5px 0px;
+  text-align: center;
+}
+
+.evein_s th{
+  width: 50px;
+}
+
+
+.evein_res{
+  width:450px;
+  height: 200px;
+
+}
+
+.evein_res p.kata{
+  width:200px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 27px ;
+  border: 1px solid #000;
+  background: url("../img/mokume4.png") repeat;
+  border-radius: 10px;
+}
+
+.evein_res a.res{
+  line-height: 60px;
+  font-size: 30px;
+  padding: 7px 32px ;
+  margin: 0 auto;
+  color: #fff;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.evein_res a.log{
+  line-height: 60px;
+  font-size: 30px;
+  padding: 7px 52px ;
+  margin: 0 auto;
+  color: #fff;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+p.moji{
+  width: 452.5px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+a.moji{
+  margin: 0 auto;
+  font-size: 17px;
+}
+
+/* @media screen and (max-width:1024px) and (max-width:768px) */
+@media (max-width: 767px)  {
+
+  .evein_box{
+    padding-bottom: 40px;
+    max-height: 1200px;
+    height: 100%;
+    display: block;
+    margin:  0 auto;
+  }
+
+  .evein_img{
+    max-width: 500px;
+    width: auto;
+    max-height: 500px;
+    height: auto;
+    /* background-color: #EEE; */
+    /* background-position: center center; */
+    margin:  0 auto;
+  }
+
+  .evein_img img{
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    height: auto;
+    background-size: 100%;
+    border: 2px solid #C0C0C0;
+  }
+
+  .evein_res{
+    max-width:450px;
+    width:auto;
+    max-height: 150px;
+    height:auto;
+    margin: 0 auto;
+  }
+
+  .evein_res p.kata{
+    width:200px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 27px ;
+    border: 1px solid #000;
+    background: url("../img/mokume4.png") repeat;
+    border-radius: 10px;
+  }
+
+  .evein_s{
+    max-width: 400px;
+    width: auto;
+    /* max-height: 400px; */
+    /* height: auto; */
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+
+  #event_list{
+    margin: 30px 0 100px 0;
+  }
+  p.moji{
+    max-width: 452.5px;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .event_name{
+    height: 100px;
+    height: auto;
+  }
+}

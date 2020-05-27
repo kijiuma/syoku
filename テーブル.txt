@@ -1,0 +1,183 @@
+■ユーザテーブル
+・ユーザ名
+・パスワード
+・メールアドレス
+・氏名
+・性別
+・年齢（任意）
+・職業（任意）
+・コメント（任意）
+・登録時間
+・編集時間
+
+■イベントテーブル
+・イベント名
+・開催日程
+・開催時間
+
+■スタッフテーブル
+・スタッフ名
+・名前
+・性別
+・年齢
+・コメント
+
+■予約テーブル
+・イベント名
+・ユーザ名
+・パスワード
+・メールアドレス
+・氏名
+・性別
+・年齢（任意）
+・職業（任意）
+・コメント（任意）
+・予約時間
+
+■コンタクトテーブル
+・氏名
+・フリガナ
+・電話番号（任意）
+・メールアドレス
+・お問い合わせ内容
+・送付時間
+
+
+
+
+
+■Userテーブル
+id int(8)
+user_name varchar(16)
+password varchar(16)
+email varchar(32)
+name varchar(16)
+gender smallint(1)
+age smallint(3)
+Job text
+comment text
+created datetime
+update datetime
+
+■Eventsテーブル
+id int(8)
+events_name varchar(32)
+schedule date
+place varchar(16)
+price int(8)
+open_time datetime
+
+■Staffテーブル
+id int(8)
+nickname varchar(16)
+flom varchar(16)
+comment text
+
+■Reserveテーブル
+id int(8)
+User_id
+Events_id
+created datetime
+
+■Contactテーブル(ログインしなくても下記入力で送付可能)
+id int(8)
+name varchar(16)
+kana varchar(16)
+tell varchar(16)
+email varchar(32)
+inquiry text
+created datetime
+
+
+eventsとuser
+select
+
+SELECT 
+* 
+FROM 
+reserve
+JOIN
+user ON user.id = reserve.events_id
+JOIN
+events ON events.id = reserve.events_id
+
+
+SELECT
+user.id,
+user.user_name,
+user.password,
+user.email,
+user.name
+user.gender
+user.age,
+user.job,
+user.comment,
+events.id,
+events.events_name,
+events.place,
+events.price,
+events.schedule,
+events.open_time,
+events.close_time,
+events.capacity,
+events.img,
+reserve.created
+
+sql文
+SELECT
+user.id as user_id,
+user.user_name,
+user.password,
+user.email,
+user.name,
+user.gender,
+user.age,
+user.job,
+user.comment,
+events.id as events_id,
+events.events_name,
+events.place,
+events.price,
+events.schedule,
+events.open_time,
+events.close_time,
+events.capacity,
+events.img,
+reserve.created
+FROM 
+reserve
+JOIN
+user ON user.id = reserve.events_id
+JOIN
+events ON events.id = reserve.events_id
+
+
+  $sql = "SELECT";
+    $sql .= "user.id as user_id,";
+    $sql .= "user.user_name,";
+    $sql .= "user.password,";
+    $sql .= "user.email,";
+    $sql .= "user.name,";
+    $sql .= "user.age,";
+    $sql .= "user.job,";
+    $sql .= "user.comment,";
+    $sql .= "events.id as events_id,";
+    $sql .= "events.events_name,";
+    $sql .= "events.place,";
+    $sql .= "events.price,";
+    $sql .= "events.schedule,";
+    $sql .= "events.open_time,";
+    $sql .= "events.close_time,";
+    $sql .= "events.capacity,";
+    $sql .= "events.img,";
+    $sql .= "reserve.created";
+    $sql .= "FROM";
+    $sql .= "reserve";
+    $sql .= "JOIN";
+    $sql .= "user ON user.id = reserve.events_id";
+    $sql .= "JOIN";
+    $sql .= "events ON events.id = reserve.events_id";
+    $sql .= "WHERE id = :id";
+
+
+SELECT user.id as user_id,user.user_name,user.password,user.email,user.name,user.age,user.gender,user.job,user.comment,events.id as events_id,events.events_name,events.place,events.price,events.schedule,events.open_time,events.close_time,events.capacity,events.img,reserve.created FROM reserve JOIN user ON user.id = reserve.events_id JOIN events ON events.id = reserve.events_id WHERE user.id = :id

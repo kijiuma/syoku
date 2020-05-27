@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+ul#menu .phot{
+  width: 166.59px;
+  height: 40px;
+  background-image: url("../img/mokume2.jpg");
+  border: 1px solid #000;
+}
+
+ul#menu li.phot a{
+  font-size: 24px;
+  color:#000;
+}
+
+#main .img{
+  background-image: url("../img/photo.jpg");
+}
+
+@charset "UTF-8";
+
+#design{
+  width:1000px;
+  margin-top:40px;
+}
+
+/* フォトメニュー */
+#thumb_area{
+  height: 200px;
+}
+
+.clearfix{
+  display: block;
+}
+
+#thumb_prev{
+  width: 30px;
+  float: left;
+}
+
+#thumb{
+  width:940px;
+  float:left;
+  overflow:hidden;
+}
+
+#thumb ul{
+  width:1880px;
+  padding:0 5px;
+}
+
+#thumb ul li{
+  width:300px;
+  height:200px;
+  float:left;
+  margin:0 5px;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+#thumb ul li img{
+  width:100%;
+  height:100%;
+}
+
+img{
+border-style: none;
+display: block;
+}
+
+/* フォトメイン */
+#photo_area{
+  width:840px;
+  margin:40px auto 0 auto;
+}
+
+#photo_prev{
+  width:30px;
+  float:left;
+}
+#photo_next2,#photo_prev2,#thumb_next2,#thumb_prev2{
+    display: none;
+}
+
+#photo ul li{
+  height: 520px;
+  width: 780px;
+  float:left;
+}
+
+#photo ul{
+  width: 7800px;
+}
+
+#photo{
+  width:780px;
+  float:left;
+  overflow: hidden;
+}
+
+#photo_next{
+  width:30px;
+  float: left;
+}
+
+#description{
+  width:8000px;
+}
+
+#description_area{
+  width:800px;
+  margin:40px auto;
+  padding: 40px 0;
+  background: url("../img/design/description_bg.png");
+  background-size:100% 100%;
+  overflow: hidden;
+}
+
+#description .text p.index{
+  font-size:16px;
+  font-weight: bold;
+  line-height: 40px;
+}
+#description .text p{
+  text-align:center;
+  font-size:12px;
+  line-height: 20px;
+}
+
+#description .text{
+  width: 800px;
+  float: left;
+}
+
+#photo img{
+  width:780px ;
+  height:  520px;
+  z-index: 100;
+}
+
+#photo_frame{
+  max-width: 1000px;
+  width: auto;
+  padding-top: 1px;
+  background: url("../img/mokume4.png") repeat;
+  padding-bottom: 50px;
+}
+
+#home .name_logo{
+  border-bottom: 2px solid #fff;
+}
+
+#Sub_menu{
+display:none;
+}
+
+#thumb ul li:after {
+    content: url("../img/logo_photo3.png");
+    position: relative;
+    width: 100%;
+    top: -200px;
+    left: 0;
+}
+
+.home_botton p.kata{
+  height: 30px;
+}
+.home_botton a{
+  display: none;
+}
+
+img.line3{
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* @media screen and (max-width:1024px) and (max-width:768px)  */
+@media (max-width: 767px) {
+
+  #tçhumb ul{
+    max-width:1880px;
+    width:100%;
+    height: auto;
+    display: flex;
+  }
+  #tçhumb  li{
+    justify-content: center;
+    align-items: center;
+  }
+  #thumb{
+    max-width: 940px;
+    width:100%;
+    float:left;
+    overflow:hidden;
+  }
+  #thumb_prev,#thumb_next,#photo_next{
+    display: none;
+  }
+  #thumb_prev2 img{
+    width: 100px;
+    height: 50px;
+    float: right;
+  }
+  #thumb_next2 img{
+    width: 100px;
+    height: 50px;
+    float: left;
+  }
+  #photo_next2,#photo_prev2,#thumb_next2,#thumb_prev2{
+    display: block;
+  }
+
+  #photo_next2 img,#photo_prev2 img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    display: none;
+
+  }
+  #photo_prev,#photo_next{
+    display: none;
+  }
+  #photo{
+    float:left;
+  }
+  #photo_prev{
+    float:none;
+  }
+  #photo img{
+    max-width:780px;
+    width:100%;
+    max-height:520px;
+    height:100%;
+  }
+
+  #photo ul li{
+    max-height: 520px;
+    height: 100%;
+    max-width: 780px;
+    width: 100%;
+    float:left;
+    /* border: 2px solid #fff; */
+    background-image: url(../img/frame1.png);
+    z-index: 101;
+    padding:7px;
+    border:1px solid #ccc;
+    background:#fff;
+  }
+
+  #photo ul{
+    max-width: 7800px;
+    width: 100%;
+  }
+
+  #photo{
+    max-width:780px ;
+    width:100% ;
+    float:left;
+    overflow: hidden;
+  }
+  #photo img{
+    max-width:780px ;
+    width:100% ;
+    max-height: 520px;
+    height: 100%;
+  }
+  #photo_area{
+    max-width:840px;
+    width:100%;
+    margin:40px auto 0 auto;
+  }
+
+
+  .home_botton p.kata{
+    width:200px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 20px ;
+    border: 1px solid #000;
+    background: url("../img/mokume3.jpg") repeat;
+    border-radius: 10px;
+  }
+  .home_botton a{
+    display: block;
+    line-height: 60px;
+    font-size: 30px;
+    padding: 1px 50px ;
+    margin: 0 auto;
+    color: #000;
+  }
+
+  .home_botton{
+    height: 30px;
+  }
+
+
+  #thumb_area{
+    height: 200px;
+  }
+
+  .clearfix{
+    display: block;
+  }
+
+
+
+}
